@@ -1,0 +1,18 @@
+{
+    "id": "Shrimp_mod",
+    "name": "Dealt by Shrimp",
+    "display_name": "Dealt by Shrimp",
+    "author": ["The Shrimp"],
+    "description":"This mod is a contributive work where anyone can put their littles ideas into. We strongly recommend to play this mod with the \"Pixel Art Smoothing\" setting ON.",
+    "prefix": "shrimp",
+    "main_file": "main.lua",
+    "priority": -42,
+    "badge_colour": "E28743",
+    "badge_text_colour": "FCFCFC",
+    "version": "2.0.0-public beta 2",
+    "dependencies": [
+        "Steamodded",
+        "Lovely",
+        "3xCredits"
+    ]
+}
