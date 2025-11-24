@@ -3,7 +3,8 @@
 -----VERSION 2.0.0-public beta 2-----
 -- Sprites
 SMODS.Atlas{key = 'Mahjong_Cards',path = 'Mahjong_Cards.png',px = 71, py = 95}
-SMODS.Atlas{key = 'mahjong_back', path = 'mahjong_back.png', px = 71, py = 95}
+SMODS.Atlas{key = 'Back',         path = 'Back.png',         px = 71, py = 95}
+SMODS.Atlas{key = 'Enhancement',  path = 'copper_enh.png',   px = 71, py = 95}
 SMODS.Atlas{key = 'Mahjong_UI',   path = 'Mahjong_UI.png',   px = 18, py = 18}
 SMODS.Atlas{key = 'Voucher',      path = 'voucher.png',      px = 71, py = 95}
 SMODS.Atlas{key = 'booster',      path = 'Booster.png',      px = 71, py = 95}
@@ -12,7 +13,9 @@ SMODS.Atlas{key = 'Jokers',       path = 'Jokers.png',       px = 71, py = 95}
 SMODS.Atlas{key = 'Solar',        path = 'Solar.png',        px = 65, py = 95}
 SMODS.Atlas{key = 'modicon',      path = 'icon.png',         px = 32, py = 32}
 SMODS.Atlas{key = 'Tag',          path = 'tag.png',          px = 34, py = 34}
-SMODS.Atlas{key = 'blind_chips',  path = 'BlindChips.png',   atlas_table = 'ANIMATION_ATLAS',frames = 21,px = 34,py = 34}
+SMODS.Atlas{key = 'Seal',         path = 'seal.png',         px = 71, py = 95}
+SMODS.Atlas{key = 'blind_chips',  path = 'BlindChips.png',   px = 34, py = 34,  atlas_table = 'ANIMATION_ATLAS',frames = 21}
+SMODS.Atlas{key = 'balatro',      path = 'balatro.png',      px = 333,py = 216, raw_key = true}
 -- Custom colors
 loc_colour('red') 
 G.ARGS.LOC_COLOURS['Epic'] = HEX('01A6AF')
@@ -24,6 +27,18 @@ SMODS.Rarity{
     key = 'epic',
     default_weight = 0.025,
     badge_colour = HEX('01A6AF'),
+    get_weight = function(self, weight, object_type)
+        return weight
+    end,
+    pools = {
+        ['Joker'] = true
+    },
+}
+--Twisted rarity
+SMODS.Rarity{
+    key = 'twisted',
+    default_weight = 0,
+    badge_colour = HEX('332313'),
     get_weight = function(self, weight, object_type)
         return weight
     end,
@@ -239,6 +254,7 @@ assert(SMODS.load_file('./modules/jokers/JOKER_Brunnhilde.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Sunk_Cost_Fallacy.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Soul_of_the_Galaxy.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Cry_for_the_weeper.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Copper_Stairs.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Rinshan.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Red_Dora.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Little_Dragons.lua'))()
@@ -276,13 +292,16 @@ assert(SMODS.load_file('./modules/jokers/JOKER_The_Court.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_The_Monolith.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_The_Library_Of_Order.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Quid_Pro_Quo.lua'))()
-assert(SMODS.load_file('./modules/jokers/JOKER_Apoptosis.lua'))()
-assert(SMODS.load_file('./modules/jokers/JOKER_Necrosis.lua'))()
-assert(SMODS.load_file('./modules/jokers/JOKER_Madness.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Angry.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Rude.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Flesh_Prison.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Flesh_Panopticon.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Apoptosis.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Necrosis.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Madness.lua'))()
+--Load twisted jokers
+assert(SMODS.load_file('./modules/jokers/JOKER_The_Martyr.lua'))()
+
 --Load prime jokers
 assert(SMODS.load_file('./modules/jokers/JOKER_Minos_Prime.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Sisyphus_Prime.lua'))()
@@ -317,10 +336,23 @@ assert(SMODS.load_file('./modules/sinful/SIN_Sigilum_Dei.lua'))()
 --Load packs
 assert(SMODS.load_file('./modules/booster/BOOSTER_Solar_Packs.lua'))()
 assert(SMODS.load_file('./modules/booster/BOOSTER_Sinful_Packs.lua'))()
+assert(SMODS.load_file('./modules/booster/BOOSTER_Spectral_Packs.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Tags
 assert(SMODS.load_file('./modules/tags/TAG_Epic.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
+--Load Seals
+assert(SMODS.load_file('./modules/seals/SEAL_Black.lua'))()
+----------------------------------------------------------------------------------------------------------------------
+--Load enhancements
+assert(SMODS.load_file('./modules/enhancements/ENH_Copper.lua'))()
+assert(SMODS.load_file('./modules/enhancements/ENH_Exposed_Copper.lua'))()
+assert(SMODS.load_file('./modules/enhancements/ENH_Weathered_Copper.lua'))()
+assert(SMODS.load_file('./modules/enhancements/ENH_Oxidized_Copper.lua'))()
+----------------------------------------------------------------------------------------------------------------------
+--Load decks
+assert(SMODS.load_file('./modules/deck/DECK_Epic.lua'))()
+
 --Load mahjong related things
 --assert(SMODS.load_file('./modules/suits/SUIT_Mahjong.lua'))()
 --assert(SMODS.load_file('./modules/deck/DECK_Mahjong.lua'))()

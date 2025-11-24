@@ -19,6 +19,11 @@ SMODS.Joker{ --Madness
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "@andresirlo",
+    },
 
     calculate = function(self, card, context)
         if context.setting_blind  then

@@ -17,6 +17,11 @@ SMODS.Joker{ --Aestetic of hate
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = "Shrimp",
+    },
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  and not context.blueprint then

@@ -1,4 +1,4 @@
-SMODS.Joker{ --Bismuth
+SMODS.Joker{
     key = "JOKER_Bismuth",
     config = {
         extra = {
@@ -20,6 +20,11 @@ SMODS.Joker{ --Bismuth
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "@Steam_Master0",
+        code = "Shrimp",
+        concept = "<Credits would be appreciated>",
+    },
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
             if SMODS.get_enhancements(context.other_card)["m_wild"] == true then

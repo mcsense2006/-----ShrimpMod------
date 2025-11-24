@@ -12,6 +12,13 @@ return {
                     'winning {C:attention}hands{}/parts of {C:attention}hands{}'
                 }
             },
+            b_shrimp_DECK_Epic = {
+                name = 'Epic Deck',
+                text = {
+                    'Start with 2 {C:Epic}epic{} jokers',
+                    '{C:red}-2{} joker slots'
+                }
+            },
         },
         Blind={
             bl_shrimp_BLIND_The_Rune = {
@@ -33,12 +40,37 @@ return {
                     'Placeholder, 3rd row',
                 }
             },
+            j_shrimp_JOKER_The_Martyr = {
+                name = 'The Martyr',
+                text = {
+                    '{X:mult,C:white}X4{} mult and',
+                    '{X:chips,C:white}X4{} chips if first played hand,',
+                    '{X:mult,C:white}X0.5{} mult and',
+                    '{X:chips,C:white}X0.5{} chips if not first played hand'
+                }
+            },
+            j_shrimp_JOKER_In_The_wake_Of_Poseidon = {
+                name = 'In The Wake Of Poseidon',
+                text = {
+                    'Gains {C:white,X:chips}X1{} chips when the',
+                    'played hand contains a {C:attention}5{} and an {C:attention}ace{}.',
+                    '{C:inactive}(currently{} {C:white,X:chips}X#1#{} {C:inactive}chips) {}'
+                }
+            },
             j_shrimp_JOKER_Venom_Snake = {
                 name = 'Venom Snake',
                 text = {
                     'Gains {C:white,X:mult}X1{} mult',
                     'each time a {C:planet}earth{} card is used',
                     '{C:inactive}(currently{} {C:white,X:mult}X#1#{C:inactive} mult){}'
+                }
+            },
+            j_shrimp_JOKER_Copper_Stairs = {
+                name = 'Slightly Weathered Waxed Cut Copper Stairs',
+                text = {
+                    'Gains {C:white,X:mult}X0.2{} Mult when a card with',
+                    'any {C:attention}copper enhancement{} is scored',
+                    '{C:inactive}(Currently{} {C:white,X:mult}X#1#{} {C:inactive}Mult)'
                 }
             },
             j_shrimp_JOKER_Bismuth = {
@@ -1100,6 +1132,7 @@ return {
         collabs={},
         dictionary={
             k_shrimp_epic = 'Epic',
+            k_shrimp_twisted = 'Twisted',
             k_shrimp_prime = 'Prime Soul', 
             b_solar_cards = 'Solar cards',
             k_solar = 'Solar',

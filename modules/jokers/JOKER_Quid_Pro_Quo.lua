@@ -16,6 +16,11 @@ SMODS.Joker{ --Quid Pro Quo
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "@andresirlo",
+    },
 
     calculate = function(self, card, context)
         

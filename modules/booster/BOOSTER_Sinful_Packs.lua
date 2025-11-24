@@ -5,7 +5,7 @@ SMODS.Booster {
     cost = 4,
     discovered = true,
     atlas = 'booster',
-    pos = { x = 2, y = 1 },
+    pos = { x = 0, y = 2 },
     config = { extra = 3, choose = 1 },
     draw_hand = false,
     loc_vars = function(self, info_queue, card)
@@ -52,7 +52,7 @@ SMODS.Booster {
     cost = 4,
     discovered = true,
     atlas = 'booster',
-    pos = { x = 2, y = 1 },
+    pos = { x = 1, y = 2 },
     config = { extra = 3, choose = 1 },     
     draw_hand = false,
     loc_vars = function(self, info_queue, card)
@@ -99,7 +99,7 @@ SMODS.Booster {
     cost = 6,
     discovered = true,
     atlas = 'booster',
-    pos = { x = 2, y = 1 },
+    pos = { x = 2, y = 2 },
     config = { extra = 5, choose = 1 },
     draw_hand = false,
     loc_vars = function(self, info_queue, card)
@@ -146,7 +146,7 @@ SMODS.Booster {
     cost = 6,
     discovered = true,
     atlas = 'booster',
-    pos = { x = 2, y = 1 },
+    pos = { x = 3, y = 2 },
     config = { extra = 5, choose = 1 },
     draw_hand = false,
     loc_vars = function(self, info_queue, card)
@@ -193,7 +193,7 @@ SMODS.Booster {
     cost = 8,
     discovered = true,
     atlas = 'booster',
-    pos = { x = 2, y = 1 },
+    pos = { x = 0, y = 3 },
     config = { extra = 5, choose = 2 },
     draw_hand = false,
     loc_vars = function(self, info_queue, card)
@@ -240,7 +240,7 @@ SMODS.Booster {
     cost = 8,
     discovered = true,
     atlas = 'booster',
-    pos = { x = 2, y = 1 },
+    pos = { x = 1, y = 3 },
     config = { extra = 5, choose = 2 },
     draw_hand = false,
     loc_vars = function(self, info_queue, card)

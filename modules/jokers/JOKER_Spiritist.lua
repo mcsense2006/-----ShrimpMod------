@@ -1,11 +1,6 @@
 SMODS.Joker{
     name = "Spiritist",
     key = "JOKER_Spiritist",
-    credit = {
-    art = "@Steam_Master0",
-    code = "Shrimp",
-    concept = "@andresirlo",
-    },
     pos = {x = 7, y = 3},
     cost = 9,
     rarity = 3,
@@ -14,6 +9,11 @@ SMODS.Joker{
     unlocked = true,
     discovered = true,
     atlas = 'Jokers', 
+    credit = {
+    art = "@Steam_Master0",
+    code = "Shrimp",
+    concept = "@andresirlo",
+    },
     config = {
         extra = {
             ethereal = 0

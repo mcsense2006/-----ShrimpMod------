@@ -14,6 +14,11 @@ SMODS.Joker{
             Sinful = 0
         }
     },
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = "Shrimp",
+    },
     set_badges = function(self, card, badges)
              badges[#badges+1] = create_badge('Ultrakill', HEX("8F0300"), G.C.White, 1 )
     end,

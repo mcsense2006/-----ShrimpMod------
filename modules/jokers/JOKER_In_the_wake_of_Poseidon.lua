@@ -1,17 +1,9 @@
 SMODS.Joker{
-    key = "JOKER_In_the_wake_of_Poseidon",
+    key = "JOKER_In_The_wake_Of_Poseidon",
     config = {
         extra = {
             Xchips = 1
         }
-    },
-    loc_txt = {
-        ['name'] = 'In the wake of poseidon',
-        ['text'] = {
-            [1] = 'Gains {C:white,X:chips}X1{} chips when the',
-            [2] = 'played hand contains a {C:attention}5{} and an {C:attention}ace{}.',
-            [3] = '{C:inactive}(currently{} {C:white,X:chips}X#1#{} {C:inactive}chips) {}'
-        },
     },
     pos = {
         x = 0,

@@ -18,9 +18,9 @@ SMODS.Joker{
     discovered = true,
     atlas = 'Jokers',
     credit = {
-        art = "",
+        art = "Shrimp",
         code = "Shrimp",
-        concept = "",
+        concept = "<Credits would be appreciated>",
     },
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.Xmult}}

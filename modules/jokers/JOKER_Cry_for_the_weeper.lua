@@ -18,6 +18,11 @@ SMODS.Joker{ --Cry for the weeper
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = "Shrimp",
+    },
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then

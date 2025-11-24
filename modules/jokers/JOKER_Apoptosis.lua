@@ -7,15 +7,6 @@ SMODS.Joker{ --Apoptosis
             respect = 0
         }
     },
-    loc_txt = {
-        ['name'] = 'Apoptosis',
-        ['text'] = {
-            [1] = '{C:white, X:mult}X2.22{} mult, last scored card is destroyed, after destroying 6 cards sell this card to create Necrosis'
-        },
-        ['unlock'] = {
-            [1] = 'Unlocked by default.'
-        }
-    },
     pos = {
         x = 0,
         y = 0
@@ -28,6 +19,11 @@ SMODS.Joker{ --Apoptosis
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "@andresirlo",
+    },
     loc_vars = function(self, info_queue, card)
             return {vars = { card.ability.extra.count}}
     end,

@@ -20,6 +20,12 @@ SMODS.Joker{ --Necrosis
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "@andresirlo",
+    },
+    
     in_pool = function(self, args)
           return (
           not args 
