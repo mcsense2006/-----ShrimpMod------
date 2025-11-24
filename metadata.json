@@ -9,7 +9,7 @@
     "priority": -42,
     "badge_colour": "E28743",
     "badge_text_colour": "FCFCFC",
-    "version": "2.0.0-public beta 2",
+    "version": "2.0.0-public beta 3",
     "dependencies": [
         "Steamodded",
         "Lovely",

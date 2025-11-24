@@ -1,6 +1,6 @@
 --------------------MOD CODE--------------------
 --                      If you're the creator of one or another content you see in this mod and you don't want it there, contact me (@marxense) on discord
------VERSION 2.0.0-public beta 2-----
+-----VERSION 2.0.0-public beta 3-----
 -- Sprites
 SMODS.Atlas{key = 'Mahjong_Cards',path = 'Mahjong_Cards.png',px = 71, py = 95}
 SMODS.Atlas{key = 'Back',         path = 'Back.png',         px = 71, py = 95}
