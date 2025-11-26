@@ -26,7 +26,7 @@ SMODS.Enhancement {
     weight = 5,
     calculate = function(self, card, context)
         if context.main_scoring and context.cardarea == G.play then
-            card:set_ability(G.P_CENTERS.m_mycustom_ENH_Weathered_Copper)
+            card:set_ability(G.P_CENTERS.m_shrimp_ENH_Weathered_Copper)
             return {
                 Xmult = card.ability.extra.Xmult,
                 extra = {

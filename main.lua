@@ -352,6 +352,7 @@ assert(SMODS.load_file('./modules/enhancements/ENH_Oxidized_Copper.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load decks
 assert(SMODS.load_file('./modules/deck/DECK_Epic.lua'))()
+assert(SMODS.load_file('./modules/deck/DECK_Copper.lua'))()
 
 --Load mahjong related things
 --assert(SMODS.load_file('./modules/suits/SUIT_Mahjong.lua'))()

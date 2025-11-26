@@ -3,7 +3,7 @@
     "name": "Dealt by Shrimp",
     "display_name": "Dealt by Shrimp",
     "author": ["The Shrimp"],
-    "description":"This mod is a contributive work where anyone can put their littles ideas into. We strongly recommend to play this mod with the \"Pixel Art Smoothing\" setting ON.",
+    "description":"This mod is a collaborative work where anyone can put their littles ideas into. We strongly recommend to play this mod with the \"Pixel Art Smoothing\" setting ON.",
     "prefix": "shrimp",
     "main_file": "main.lua",
     "priority": -42,
