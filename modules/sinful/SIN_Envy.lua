@@ -13,6 +13,7 @@ SMODS.Consumable {
     atlas = 'Sinful',
     use = function(self, card, area, copier)
         local used_card = copier or card
+        if to_big(#G.jokers.cards) >= to_big(1) then
             local jokers_to_copy = {}
             local available_jokers = {}
             
@@ -34,7 +35,7 @@ SMODS.Consumable {
                     jokers_to_copy[#jokers_to_copy + 1] = temp_jokers[i]
                 end
             end
-
+            
             G.E_MANAGER:add_event(Event({
                 trigger = 'after',
                 delay = 0.4,
@@ -44,7 +45,7 @@ SMODS.Consumable {
                     return true
                 end
             }))
-
+            
             local _first_materialize = nil
             for _, joker_to_copy in pairs(jokers_to_copy) do
                 G.E_MANAGER:add_event(Event({
@@ -61,8 +62,9 @@ SMODS.Consumable {
                 }))
             end
             delay(0.6)
+        end
     end,
     can_use = function(self, card)
-        return true
+        return (to_big(#G.jokers.cards) >= to_big(1))
     end
 }

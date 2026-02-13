@@ -1,7 +1,6 @@
-
 SMODS.Back {
     key = 'DECK_Copper',
-    pos = { x = 0, y = 0 },
+    pos = { x = 1, y = 0 },
     config = {
     },
     loc_txt = {
@@ -11,6 +10,7 @@ SMODS.Back {
             [2] = 'in your starting',
             [3] = 'deck have the',
             [4] = '{C:attention}Copper enhancement{}',
+            [5] = 'Starting {C:attention}playing hands{} set to {C:chips}1{}',
         },
     },
     unlocked = true,
@@ -27,5 +27,6 @@ SMODS.Back {
                 return true
             end
         }))
+        G.GAME.starting_params.hands = 1
     end
 }

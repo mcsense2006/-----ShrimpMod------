@@ -1,6 +1,6 @@
 SMODS.Back {
     key = 'DECK_Epic',
-    pos = { x = 0, y = 0 },
+    pos = { x = 2, y = 0 },
     config = {
         extra = {
             joker_slots_value = 2

@@ -38,7 +38,7 @@ SMODS.Joker{ --Angry
   end)()) then
                 return {
                     func = function()
-                    card.ability.extra.mulx = (card.ability.extra.mulx) + 60
+                    card.ability.extra.mulx = (card.ability.extra.mulx) + 6
                     return true
                 end
                 }
@@ -52,7 +52,7 @@ SMODS.Joker{ --Angry
   end)()) then
                 return {
                     func = function()
-                    card.ability.extra.mulx = (card.ability.extra.mulx) + 600
+                    card.ability.extra.mulx = (card.ability.extra.mulx) + 60
                     return true
                 end
                 }

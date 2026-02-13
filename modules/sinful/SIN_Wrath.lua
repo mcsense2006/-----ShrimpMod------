@@ -2,10 +2,11 @@ SMODS.Consumable {
     key = 'SIN_Wrath',
     set = 'Sinful',
     pos = { x = 0, y = 0 },
-    config = { extra = {
-        destroy_joker_amount = 1,
-        dollars_value = 25
-    } },
+    config = { 
+        extra = {
+            dollars0 = 25
+        } 
+    },
     cost = 3,
     unlocked = true,
     discovered = true,
@@ -14,6 +15,7 @@ SMODS.Consumable {
     atlas = 'Sinful',
     use = function(self, card, area, copier)
         local used_card = copier or card
+        if to_big(#G.jokers.cards) > to_big(0) then
             local jokers_to_destroy = {}
             local deletable_jokers = {}
             
@@ -31,11 +33,11 @@ SMODS.Consumable {
                 
                 pseudoshuffle(temp_jokers, 98765)
                 
-                for i = 1, math.min(1, #temp_jokers) do
+                for i = 1, math.min(, #temp_jokers) do
                     jokers_to_destroy[#jokers_to_destroy + 1] = temp_jokers[i]
                 end
             end
-
+            
             G.E_MANAGER:add_event(Event({
                 trigger = 'after',
                 delay = 0.4,
@@ -45,7 +47,7 @@ SMODS.Consumable {
                     return true
                 end
             }))
-
+            
             local _first_dissolve = nil
             G.E_MANAGER:add_event(Event({
                 trigger = 'before',
@@ -63,14 +65,19 @@ SMODS.Consumable {
                 trigger = 'after',
                 delay = 0.4,
                 func = function()
-                    card_eval_status_text(used_card, 'extra', nil, nil, nil, {message = "+"..tostring(25).." $", colour = G.C.MONEY})
-                    ease_dollars(25, true)
+                    
+                    local current_dollars = G.GAME.dollars
+                    local target_dollars = G.GAME.dollars + 25
+                    local dollar_value = target_dollars - current_dollars
+                    card_eval_status_text(used_card, 'extra', nil, nil, nil, {message = "+"..tostring(25).." $", colour = G.C.RED})
+                    ease_dollars(dollar_value, true)
                     return true
                 end
             }))
             delay(0.6)
+        end
     end,
     can_use = function(self, card)
-        return true
+        return (to_big(#G.jokers.cards) > to_big(0))
     end
 }

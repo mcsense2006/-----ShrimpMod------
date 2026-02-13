@@ -85,7 +85,7 @@ SMODS.Booster {
     loc_txt = {
         name = "Bonanza Spectral Pack",
         text = {
-            [1] = 'Choose up to {C:attention}2 {}of {C:attention}10{}',
+            [1] = 'Choose up to {C:attention}2 {}of {C:attention}12{}',
             [2] = '{C:spectral}Spectral{} Cards to be',
             [3] = 'used immediately.',
             [4] = ' ',

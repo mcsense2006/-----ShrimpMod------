@@ -1,9 +1,9 @@
 --------------------MOD CODE--------------------
 --                      If you're the creator of one or another content you see in this mod and you don't want it there, contact me (@marxense) on discord
------VERSION 2.0.0-public beta 3-----
+--                      DO CLEARELY STATE THAT YOU CONTACT ME FOR THAT MATTER, OTHERWISE I WON'T RESPOND
+-----VERSION 2.0.0-public beta 4-----
 -- Sprites
 SMODS.Atlas{key = 'Mahjong_Cards',path = 'Mahjong_Cards.png',px = 71, py = 95}
-SMODS.Atlas{key = 'Back',         path = 'Back.png',         px = 71, py = 95}
 SMODS.Atlas{key = 'Enhancement',  path = 'copper_enh.png',   px = 71, py = 95}
 SMODS.Atlas{key = 'Mahjong_UI',   path = 'Mahjong_UI.png',   px = 18, py = 18}
 SMODS.Atlas{key = 'Voucher',      path = 'voucher.png',      px = 71, py = 95}
@@ -14,6 +14,7 @@ SMODS.Atlas{key = 'Solar',        path = 'Solar.png',        px = 65, py = 95}
 SMODS.Atlas{key = 'modicon',      path = 'icon.png',         px = 32, py = 32}
 SMODS.Atlas{key = 'Tag',          path = 'tag.png',          px = 34, py = 34}
 SMODS.Atlas{key = 'Seal',         path = 'seal.png',         px = 71, py = 95}
+SMODS.Atlas{key = 'Back',         path = 'Back.png',         px = 71, py = 95}
 SMODS.Atlas{key = 'blind_chips',  path = 'BlindChips.png',   px = 34, py = 34,  atlas_table = 'ANIMATION_ATLAS',frames = 21}
 SMODS.Atlas{key = 'balatro',      path = 'balatro.png',      px = 333,py = 216, raw_key = true}
 -- Custom colors
@@ -22,6 +23,7 @@ G.ARGS.LOC_COLOURS['Epic'] = HEX('01A6AF')
 G.ARGS.LOC_COLOURS['Prime'] = HEX('F5CF86')
 G.ARGS.LOC_COLOURS['Mahjong'] = HEX('4BC292')
 G.ARGS.LOC_COLOURS['Ultrakill'] = HEX('8F0300')
+G.ARGS.LOC_COLOURS['Solar'] = HEX('063970')
 --Epic rarity
 SMODS.Rarity{
     key = 'epic',
@@ -112,7 +114,7 @@ SMODS.current_mod.extra_tabs = function()
                                             colour = G.C.RED,
                                             minw = 3.85,
                                             button = 'joy_youtube',
-                                            label = { 'Watch our YouTube' }
+                                            label = { 'No YouTube Yet' }
                                         })
                                     }
                                 }
@@ -313,9 +315,12 @@ assert(SMODS.load_file('./modules/jokers/JOKER_L_Calamitas.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Blinds
 assert(SMODS.load_file('./modules/blinds/BLIND_The_Rune.lua'))()
+--assert(SMODS.load_file('./modules/blinds/BLIND_The_Royalty.lua'))()
+--assert(SMODS.load_file('./modules/blinds/BLIND_The_Oxide.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Vouchers
 assert(SMODS.load_file('./modules/vouchers/VOUCH_Hoarder_T1.lua'))()
+--assert(SMODS.load_file('./modules/vouchers/VOUCH_One_Use_Coupon.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Solar
 assert(SMODS.load_file('./modules/solar/SOLAR_Red_Giant.lua'))()
@@ -327,7 +332,7 @@ assert(SMODS.load_file('./modules/solar/SOLAR_Brown_Dwarf.lua'))()
 assert(SMODS.load_file('./modules/solar/SOLAR_Protostar.lua'))()
 --Load Sinful
 assert(SMODS.load_file('./modules/sinful/SIN_Greed.lua'))()
-assert(SMODS.load_file('./modules/sinful/SIN_Wrath.lua'))()
+--assert(SMODS.load_file('./modules/sinful/SIN_Wrath.lua'))()
 assert(SMODS.load_file('./modules/sinful/SIN_Envy.lua'))()
 assert(SMODS.load_file('./modules/sinful/SIN_Gluttony.lua'))()
 assert(SMODS.load_file('./modules/sinful/SIN_Sloth.lua'))()
@@ -340,6 +345,8 @@ assert(SMODS.load_file('./modules/booster/BOOSTER_Spectral_Packs.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Tags
 assert(SMODS.load_file('./modules/tags/TAG_Epic.lua'))()
+assert(SMODS.load_file('./modules/tags/TAG_Sinner.lua'))()
+assert(SMODS.load_file('./modules/tags/TAG_Solar.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Seals
 assert(SMODS.load_file('./modules/seals/SEAL_Black.lua'))()
@@ -353,6 +360,7 @@ assert(SMODS.load_file('./modules/enhancements/ENH_Oxidized_Copper.lua'))()
 --Load decks
 assert(SMODS.load_file('./modules/deck/DECK_Epic.lua'))()
 assert(SMODS.load_file('./modules/deck/DECK_Copper.lua'))()
+assert(SMODS.load_file('./modules/deck/DECK_Randomized.lua'))()
 
 --Load mahjong related things
 --assert(SMODS.load_file('./modules/suits/SUIT_Mahjong.lua'))()

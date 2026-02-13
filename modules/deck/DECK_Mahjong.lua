@@ -1,6 +1,6 @@
 SMODS.Back {
     key = "DECK_Mahjong",
-    atlas = 'mahjong_back',
+    atlas = 'Back',
     config = {
         hand_size = 6,
         discards = 14

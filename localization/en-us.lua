@@ -27,6 +27,20 @@ return {
                     'All cards debuffed until',
                     'a consumable is used or sold',
                 }
+            },
+            bl_shrimp_BLIND_The_Royalty = {
+                name = 'The Royalty',
+                text = {
+                    'All numbered cards',
+                    'are debuffed',
+                }
+            },
+            bl_shrimp_BLIND_The_Oxide = {
+                name = 'The Oxide',
+                text = {
+                    'All played cards',
+                    'become Oxidized Copper',
+                }
             }
         },
         Edition={},
@@ -431,7 +445,7 @@ return {
                     ' ',
                     '{s:0.85,E:2}after destroying 6 cards',
                     '{C:attention,s:0.85,E:2}sell{} {s:0.85,E:2}this card to create Necrosis',
-                    '{C:inactive}[#1#]'
+                    '{C:inactive}[#2#]'
                 }
             },
             j_shrimp_JOKER_Madness = {
@@ -1107,6 +1121,26 @@ return {
                     ' ',
                     'Shop has a free',
                     '{C:Epic}Epic Joker{}',
+                }
+            },
+            tag_shrimp_TAG_Sinner = {
+                name = 'Sinner Tag',
+                text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
+                    'Gives a free',
+                    '{C:Ultrakill}Mega Sinful Card{}',
+                }
+            },
+            tag_shrimp_TAG_Solar = {
+                name = 'Solar Tag',
+                text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
+                    'Gives a free',
+                    '{C:Solar}Mega Solar Card{}',
                 }
             },
         },

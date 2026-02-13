@@ -4,14 +4,13 @@ SMODS.Enhancement {
     pos = { x = 2, y = 0 },
     config = {
         extra = {
-            Xmult = 2
+            Xmult = 3
         }
     },
     loc_txt = {
         name = 'Weathered Copper',
         text = {
-            [1] = '{C:white,X:mult}X2{} Mult, becomes an {C:attention}Oxidized Copper{}',
-            [2] = 'card after scoring'
+            [1] = 'Becomes an {C:attention}Oxidized Copper{} card, {C:white,X:mult}X2{} Mult'
         }
     },
     atlas = 'Enhancement',

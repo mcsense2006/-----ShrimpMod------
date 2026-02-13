@@ -9,7 +9,7 @@ SMODS.Tag {
                 rarity = "shrimp_epic",
                 area = context.area,
             }
-            create_shop_card_ui(card, 'Joker', context.area)
+            create_shop_card_ui(card, 'Jokers', context.area)
             card.states.visible = false
             tag:yep('+', G.C.GREEN, function()
                 card:start_materialize()
