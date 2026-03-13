@@ -10,7 +10,8 @@ SMODS.Enhancement {
     loc_txt = {
         name = 'Weathered Copper',
         text = {
-            [1] = 'Becomes an {C:attention}Oxidized Copper{} card, {C:white,X:mult}X2{} Mult'
+            [1] = 'Becomes an {C:attention}Oxidized Copper{} card,',
+            [2] = '{C:white,X:mult}X2{} Mult',
         }
     },
     atlas = 'Enhancement',

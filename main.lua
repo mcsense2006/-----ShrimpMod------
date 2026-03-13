@@ -27,7 +27,7 @@ G.ARGS.LOC_COLOURS['Solar'] = HEX('063970')
 --Epic rarity
 SMODS.Rarity{
     key = 'epic',
-    default_weight = 0.025,
+    default_weight = 0.04,
     badge_colour = HEX('01A6AF'),
     get_weight = function(self, weight, object_type)
         return weight
@@ -69,7 +69,7 @@ SMODS.ConsumableType {
 }
 --Links
 function G.FUNCS.joy_discord(e)
-    love.system.openURL('https://discord.gg/WakQxQmdC5')
+    love.system.openURL('https://discord.gg/T5hdTCF6Vd')
 end
 function G.FUNCS.joy_youtube(e)
     love.system.openURL('https://youtube.com/')                     --No Youtube atm, need to make like a trailer to mod video or sm
@@ -78,7 +78,7 @@ end
 SMODS.current_mod.extra_tabs = function()
     local scale = 0.5
     return {
-        -- Our-Links tab borrowed from the terraria x balatro mod
+        -- Our-Links tab code borrowed from the terraria x balatro mod
         {
             label = 'Our Links',
             tab_definition_function = function()
